@@ -52,11 +52,32 @@
       "node/no-missing-import": "error",
       "node/no-unpublished-import": "error",
       "space-before-function-paren": "off",
+      "indent": [
+        "off",
+        2
+      ],
+      "linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ],
       "vue/html-indent": [
         "off",
         0
       ],
-      "vue/max-attributes-per-line": "off"
+      "vue/max-attributes-per-line": "off",
+      "vue/html-self-closing": [
+        "error",
+        {
+          "html": {
+            "void": "never",
+            "normal": "any",
+            "component": "any"
+          },
+          "svg": "always",
+          "math": "always"
+        }
+      ]
     }
   },
   "eslintIgnore": [
